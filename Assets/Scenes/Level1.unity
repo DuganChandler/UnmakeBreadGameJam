@@ -127,6 +127,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2949674431457938668, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
   m_PrefabInstance: {fileID: 5575237627236581274}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &560437622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 560437624}
+  - component: {fileID: 560437623}
+  m_Layer: 0
+  m_Name: DeathObserver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &560437623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560437622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c721156f2141d7049a6805200dcc4a6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 816201275}
+--- !u!4 &560437624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560437622}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.91190094, y: -1.592623, z: -0.5427729}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &816201275 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6596281054368910409, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
@@ -351,6 +396,10 @@ PrefabInstance:
     - target: {fileID: 685848883690369415, guid: 2ae169004c8ba8142b3457ed73e47be4, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677368321805181745, guid: 2ae169004c8ba8142b3457ed73e47be4, type: 3}
+      propertyPath: speed
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 3677368321805181745, guid: 2ae169004c8ba8142b3457ed73e47be4, type: 3}
       propertyPath: PointA
@@ -746,3 +795,4 @@ SceneRoots:
   - {fileID: 2098935887}
   - {fileID: 1955224177}
   - {fileID: 1956845418}
+  - {fileID: 560437624}
