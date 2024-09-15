@@ -214,6 +214,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   walkSpeed: 2
+  dashingPower: 5
+  dashingTime: 0.2
+  dashingCoolDown: 1
+  tr: {fileID: 0}
   jumpImpulse: 3.5
   _isFacingRight: 1
 --- !u!114 &8696326524691120846
