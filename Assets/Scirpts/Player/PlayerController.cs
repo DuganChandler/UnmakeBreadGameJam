@@ -7,6 +7,14 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour {
     [SerializeField] LayerMask groundLayer;
     public float walkSpeed = 5f;
+
+    public float CurrentSpeed { get {
+        if (CanMove) {
+            return walkSpeed;
+        } else {
+            return 0;
+        }
+    }}
     public float jumpImpulse = 4f;
     Vector2 moveInput;
     [SerializeField]
@@ -36,6 +44,11 @@ public class PlayerController : MonoBehaviour {
             animator.SetBool("isFalling", value);
         }
     }
+
+    public bool CanMove { get {
+            return animator.GetBool("canMove");
+        } 
+    }
     Rigidbody2D rigidbody2D;
     Animator animator;
     CircleCollider2D circleCollider2D;
@@ -51,10 +64,11 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
+        IsFalling = !isOnGround();
     }
 
     void FixedUpdate() {
-        rigidbody2D.velocity = new Vector2 (moveInput.x * walkSpeed, rigidbody2D.velocity.y);
+        rigidbody2D.velocity = new Vector2 (moveInput.x * CurrentSpeed, rigidbody2D.velocity.y);
     }
 
     private bool isOnGround() {
@@ -78,9 +92,14 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void onJump(InputAction.CallbackContext context) {
-        IsFalling = isOnGround();
-        if (context.started && IsFalling) {
+        if (context.started && isOnGround() && CanMove) {
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpImpulse);
+        }
+    }
+
+    public void onAttack(InputAction.CallbackContext context) {
+        if (context.started) {
+            animator.SetTrigger("attack");
         }
     }
 }
