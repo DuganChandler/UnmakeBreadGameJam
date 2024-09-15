@@ -5,5 +5,5 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public int itemsCollected = 0;
-
+    
 }

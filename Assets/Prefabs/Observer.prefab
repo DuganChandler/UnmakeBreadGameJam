@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5967344945421722990}
   - component: {fileID: 7574103434279073490}
   m_Layer: 0
-  m_Name: DeathObserver
+  m_Name: Observer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

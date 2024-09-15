@@ -7,8 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour {
     [SerializeField] LayerMask groundLayer;
     public float walkSpeed = 5f;
-
-
+    public int itemsCollected = 0;
     //Dash variables
     private bool canDash = true;
     private bool isDashing;
