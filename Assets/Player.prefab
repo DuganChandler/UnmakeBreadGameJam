@@ -126,9 +126,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.002377987, y: -0.04419452}
+  m_Offset: {x: -0.0015609562, y: -0.007759273}
   serializedVersion: 2
-  m_Radius: 0.046728015
+  m_Radius: 0.076270044
 --- !u!61 &5865068485531417146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,7 +136,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6596281054368910409}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -217,6 +217,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   walkSpeed: 2
+  itemsCollected: 0
   dashingPower: 5
   dashingTime: 0.2
   dashingCoolDown: 1
