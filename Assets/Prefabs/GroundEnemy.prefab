@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6101563559974066315}
   - component: {fileID: 4899234402090317808}
   - component: {fileID: 9127689469002151579}
+  - component: {fileID: 3228440386003319248}
   m_Layer: 8
   m_Name: GroundEnemy
   m_TagString: Untagged
@@ -78,7 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PointA: {fileID: 0}
   PointB: {fileID: 0}
-  speed: 2
+  speed: 0
 --- !u!212 &6101563559974066315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -163,8 +164,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.19, y: 0.29}
+  m_Offset: {x: 0.0049476326, y: 0}
+  m_Size: {x: 0.19989526, y: 0.32606006}
   m_Direction: 0
 --- !u!114 &9127689469002151579
 MonoBehaviour:
@@ -180,12 +181,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageableHit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3677368321805181745}
+        m_TargetAssemblyTypeName: EnemyPatrol, Assembly-CSharp
+        m_MethodName: onHit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _maxHealth: 3
   _health: 3
   _isAlive: 1
   isInvincible: 0
   invinciblityTime: 0.25
+--- !u!95 &3228440386003319248
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685848883690369415}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d022cc09454672a49b9de7bb1011abb8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4882488612959720927
 GameObject:
   m_ObjectHideFlags: 0
