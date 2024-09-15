@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour {
     public bool _isFacingRight = true;
     public bool IsFacingRight { get {return _isFacingRight; } private set {
         if (_isFacingRight != value) {
-            transform.Rotate(0f, 180f, 0f);
+            transform.localScale *= new Vector2(-1, 1);
         }
         _isFacingRight = value;
     }}

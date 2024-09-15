@@ -51,6 +51,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         Gizmos.DrawWireSphere(PointA.transform.position, 0.5f);
         Gizmos.DrawWireSphere(PointB.transform.position, 0.5f);
+
         Gizmos.DrawLine(PointA.transform.position, PointB.transform.position);
     }
     public void onHit(int damage, Vector2 knockback) {
