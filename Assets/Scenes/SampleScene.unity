@@ -312,6 +312,42 @@ PrefabInstance:
       propertyPath: walkSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5777236809691006337, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_Radius
+      value: 0.046728015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5777236809691006337, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.002377987
+      objectReference: {fileID: 0}
+    - target: {fileID: 5777236809691006337, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.04419452
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865068485531417146, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_Size.x
+      value: 0.09272933
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865068485531417146, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_Size.y
+      value: 0.12839317
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865068485531417146, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00048530102
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865068485531417146, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.01246345
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865068485531417146, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865068485531417146, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.19
+      objectReference: {fileID: 0}
     - target: {fileID: 6596281054368910409, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
       propertyPath: m_Name
       value: Player
@@ -364,6 +400,10 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8938440120472408610, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1461559987, guid: 10e07162ef4f11849a4325542d4ecb37, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
