@@ -132,6 +132,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 969594048516880861, guid: 6d3945466e13f874194930f0523db383, type: 3}
   m_PrefabInstance: {fileID: 2029070110}
   m_PrefabAsset: {fileID: 0}
+--- !u!96 &848466872 stripped
+TrailRenderer:
+  m_CorrespondingSourceObject: {fileID: 7404988891541605494, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+  m_PrefabInstance: {fileID: 5575237627236581274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1177377250 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1322704420923283756, guid: 6d3945466e13f874194930f0523db383, type: 3}
@@ -505,6 +510,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3741977922521620661, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: tr
+      value: 
+      objectReference: {fileID: 848466872}
     - target: {fileID: 6596281054368910409, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
       propertyPath: m_Name
       value: Player

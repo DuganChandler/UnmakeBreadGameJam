@@ -114,14 +114,8 @@ public class PlayerController : MonoBehaviour {
 
 
     void FixedUpdate() {
-        if (!LockVelolcity)
+        if (!LockVelolcity && !isDashing)
             rigidbody2D.velocity = new Vector2 (moveInput.x * CurrentSpeed, rigidbody2D.velocity.y);
-        if (isDashing)
-        {
-            return;
-        }
-
-        rigidbody2D.velocity = new Vector2 (moveInput.x * CurrentSpeed, rigidbody2D.velocity.y);
     }
 
     private bool isOnGround() {
