@@ -8,6 +8,32 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] LayerMask groundLayer;
     public float walkSpeed = 5f;
 
+    //Dash variables
+    private bool canDash = true;
+    private bool isDashing;
+    public float dashingPower = 24f;
+    public float dashingTime = 0.2f;
+    public float dashingCoolDown = 1f;
+    [SerializeField] private TrailRenderer tr;
+
+    //Dash 
+    private IEnumerator Dash()
+    {
+        canDash = true;
+        isDashing = true;
+        float originalGravity = rigidbody2D.gravityScale;
+        rigidbody2D.gravityScale = 0.2f;
+        rigidbody2D.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rigidbody2D.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCoolDown);
+        canDash = true;
+    }
+
+
     public float CurrentSpeed { get {
         if (CanMove) {
             return walkSpeed;
@@ -64,10 +90,25 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
+        if (isDashing)
+        {
+            return;
+        }
+        
         IsFalling = !isOnGround();
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
     }
 
+
     void FixedUpdate() {
+        if (isDashing)
+        {
+            return;
+        }
+
         rigidbody2D.velocity = new Vector2 (moveInput.x * CurrentSpeed, rigidbody2D.velocity.y);
     }
 
