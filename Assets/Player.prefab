@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8696326524691120846}
   - component: {fileID: 4643147123221277828}
   - component: {fileID: 3477710814990686736}
+  - component: {fileID: 6050948222413957699}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -376,3 +377,17 @@ MonoBehaviour:
   _isAlive: 1
   isInvincible: 0
   invinciblityTime: 0.25
+--- !u!114 &6050948222413957699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596281054368910409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81a8674010fc2498cc2d46331aa1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 0}
+  bulletPrefab: {fileID: 2073408375625795831, guid: d2620c5de9c78d64abb1125be85a71cd, type: 3}
