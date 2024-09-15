@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Damageable : MonoBehaviour
 {
-   
-   
+    Animator animator; 
    [SerializeField]
    private int _maxHealth = 3;
    public int MaxHealth
@@ -37,7 +36,6 @@ public class Damageable : MonoBehaviour
             IsAlive = false;
         }
     }
-
    }
 
     [SerializeField]
@@ -62,6 +60,9 @@ public class Damageable : MonoBehaviour
         }
     }
 
+private void Awake() {
+    animator = GetComponent<Animator>();
+}
 public void Update()
 {
     if (isInvincible)
