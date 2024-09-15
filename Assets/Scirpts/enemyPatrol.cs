@@ -53,4 +53,7 @@ public class EnemyPatrol : MonoBehaviour
         Gizmos.DrawWireSphere(PointB.transform.position, 0.5f);
         Gizmos.DrawLine(PointA.transform.position, PointB.transform.position);
     }
+    public void onHit(int damage, Vector2 knockback) {
+        rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
+    }
 }
