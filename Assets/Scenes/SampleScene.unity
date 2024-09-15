@@ -234,6 +234,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5736608543152786566, guid: 2ae169004c8ba8142b3457ed73e47be4, type: 3}
+      propertyPath: knockback.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736608543152786566, guid: 2ae169004c8ba8142b3457ed73e47be4, type: 3}
+      propertyPath: knockback.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6345801751807995875, guid: 2ae169004c8ba8142b3457ed73e47be4, type: 3}
       propertyPath: m_Size.x
       value: 0.23839813
@@ -244,7 +252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6345801751807995875, guid: 2ae169004c8ba8142b3457ed73e47be4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6345801751807995875, guid: 2ae169004c8ba8142b3457ed73e47be4, type: 3}
       propertyPath: m_Offset.x
@@ -500,6 +508,14 @@ PrefabInstance:
     - target: {fileID: 6596281054368910409, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918854761986491104, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: knockback.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918854761986491104, guid: e0bb31872a3964349a7a51a8201a0069, type: 3}
+      propertyPath: knockback.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

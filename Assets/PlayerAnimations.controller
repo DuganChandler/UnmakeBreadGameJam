@@ -32,7 +32,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isAlive
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: -7176299997498075991}
   m_DstState: {fileID: 0}
   m_Solo: 0
@@ -58,7 +61,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -6581115093876968908}
-    m_Position: {x: 280, y: -10, z: 0}
+    m_Position: {x: 320, y: -10, z: 0}
   m_ChildStateMachines:
   - serializedVersion: 1
     m_StateMachine: {fileID: -7176299997498075991}
@@ -77,7 +80,7 @@ AnimatorStateMachine:
     second:
     - {fileID: 5288915557435913990}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_AnyStatePosition: {x: 50, y: -10, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -147,7 +150,9 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8911220668452344561}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 5483575366771516287}
+  - {fileID: 4873829748553675786}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -589,6 +594,23 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &4873829748553675786
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0cd32f8c3940c49a1ffe5eeb50eb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateOnStateMachine: 1
+  valueOnEnter: 0
+  valueOnExit: 0
+  updateOnState: 1
+  boolName: lockVelocity
 --- !u!1102 &4995384591904249575
 AnimatorState:
   serializedVersion: 6
@@ -630,6 +652,23 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
+--- !u!114 &5483575366771516287
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0cd32f8c3940c49a1ffe5eeb50eb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateOnStateMachine: 0
+  valueOnEnter: 0
+  valueOnExit: 1
+  updateOnState: 1
+  boolName: canMove
 --- !u!1101 &5932351270415506822
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
