@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 74010c5c0ce8fce4bbc0f21286497e34
+guid: 10e07162ef4f11849a4325542d4ecb37
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,160 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run_0
+      name: Doug_Tile_Sheet_3.5_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 74
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9d665f360403d4991186f85b2ca3ba
+      internalID: -1461559987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doug_Tile_Sheet_3.5_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 74
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba62bcda9c7d4a47b0ed527fe60264f
+      internalID: 1794778573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doug_Tile_Sheet_3.5_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 74
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b315d4d4ca8d7dd40a2597ba27e73a03
+      internalID: -1663769255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doug_Tile_Sheet_3.5_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 74
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126de6d6bd20ca64abb43f442b0a53fd
+      internalID: 491897414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doug_Tile_Sheet_3.5_4
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 72
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fbffbe43fed564cb4f2482bd832466
+      internalID: 724439864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doug_Tile_Sheet_3.5_5
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 73
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19ec0c694937e142b2f3307a23d63a5
+      internalID: -207978102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doug_Tile_Sheet_3.5_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 74
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5b17cf928b255499b05a3fdd2ed058
+      internalID: 1231944404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doug_Tile_Sheet_3.5_7
       rect:
         serializedVersion: 2
         x: 15
-        y: 12
-        width: 20
-        height: 28
+        y: 48
+        width: 17
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,62 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c45b419a44d341e439f11a1353d2f0c3
-      internalID: -805323110
+      spriteID: 7adadf4ffe3811543a632c635590533f
+      internalID: 1667380910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_1
+      name: Doug_Tile_Sheet_3.5_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 10
-        width: 20
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 517900d9db8e2274b8c59798484e7a2d
-      internalID: -2121014705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run_2
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 10
-        width: 20
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 843d8ec3c20adaf4d9f946c5d5970d5a
-      internalID: 180287944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run_3
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 12
+        x: 34
+        y: 48
         width: 21
-        height: 28
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a2c8ad36efbc1f49b75fdc94544f6ab
-      internalID: 1787953989
+      spriteID: 5b065268df0d911429ba690eeea405eb
+      internalID: -1484317672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_4
+      name: Doug_Tile_Sheet_3.5_9
       rect:
         serializedVersion: 2
-        x: 214
-        y: 10
-        width: 20
-        height: 29
+        x: 71
+        y: 46
+        width: 21
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9e54d5b1891b454fbaa42531bd07d7a
-      internalID: 775148180
+      spriteID: 9364dba1054be2144991bbf1a66177a7
+      internalID: 1666823819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_5
+      name: Doug_Tile_Sheet_3.5_10
       rect:
         serializedVersion: 2
-        x: 264
-        y: 10
-        width: 20
-        height: 29
+        x: 106
+        y: 47
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +334,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fd7de1830df4cd4da8aad9564388187
-      internalID: -495329901
+      spriteID: ff6e376ed5df5a34ab6911abd7124734
+      internalID: 231118721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doug_Tile_Sheet_3.5_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 48
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b84d168b266d0e4d9bf7091afa75809
+      internalID: -160585288
       vertices: []
       indices: 
       edges: []
@@ -238,7 +364,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 13b6d8b47bdd84a4dbd368e8c93c4bfc
+    spriteID: 9c3e8fdb74e539a48a120fdc6f77dd00
     internalID: 0
     vertices: []
     indices: 
@@ -246,12 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Run_0: -805323110
-      Run_1: -2121014705
-      Run_2: 180287944
-      Run_3: 1787953989
-      Run_4: 775148180
-      Run_5: -495329901
+      Doug_Tile_Sheet_3.5_0: -1461559987
+      Doug_Tile_Sheet_3.5_1: 1794778573
+      Doug_Tile_Sheet_3.5_10: 231118721
+      Doug_Tile_Sheet_3.5_11: -160585288
+      Doug_Tile_Sheet_3.5_2: -1663769255
+      Doug_Tile_Sheet_3.5_3: 491897414
+      Doug_Tile_Sheet_3.5_4: 724439864
+      Doug_Tile_Sheet_3.5_5: -207978102
+      Doug_Tile_Sheet_3.5_6: 1231944404
+      Doug_Tile_Sheet_3.5_7: 1667380910
+      Doug_Tile_Sheet_3.5_8: -1484317672
+      Doug_Tile_Sheet_3.5_9: 1666823819
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
