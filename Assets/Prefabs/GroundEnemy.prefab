@@ -167,6 +167,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0049476326, y: 0}
   m_Size: {x: 0.19989526, y: 0.32606006}
   m_Direction: 0
+
 --- !u!114 &9127689469002151579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +200,7 @@ MonoBehaviour:
   _isAlive: 1
   isInvincible: 0
   invinciblityTime: 0.25
+
 --- !u!95 &3228440386003319248
 Animator:
   serializedVersion: 5
