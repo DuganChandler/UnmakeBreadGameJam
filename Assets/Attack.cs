@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    Collider2D attackCollider;
     public int attackDamage = 1;
-
+    public Vector2 knockback = Vector2.zero;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Colssion occured");
         Damageable damageable = collision.GetComponent<Damageable>();
-        Debug.Log("Trigger");
         
-
         if(damageable != null)
         {
-            damageable.Hit(attackDamage);
-            Debug.Log(collision.name + " hit for " + attackDamage);
+            damageable.Hit(attackDamage, knockback);
+            Debug.Log("HIT");
         }
     }
 }

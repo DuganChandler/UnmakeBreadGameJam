@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour {
     [SerializeField] LayerMask groundLayer;
     public float walkSpeed = 5f;
-
     public float CurrentSpeed { get {
         if (CanMove) {
             return walkSpeed;
@@ -49,6 +48,16 @@ public class PlayerController : MonoBehaviour {
             return animator.GetBool("canMove");
         } 
     }
+    public bool IsAlive {
+        get {
+            return animator.GetBool("isAlive");
+        }
+    }
+    public bool LockVelolcity {
+        get{
+            return animator.GetBool("lockVelocity");
+        }
+    }
     Rigidbody2D rigidbody2D;
     Animator animator;
     CircleCollider2D circleCollider2D;
@@ -68,7 +77,8 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        rigidbody2D.velocity = new Vector2 (moveInput.x * CurrentSpeed, rigidbody2D.velocity.y);
+        if (!LockVelolcity)
+            rigidbody2D.velocity = new Vector2 (moveInput.x * CurrentSpeed, rigidbody2D.velocity.y);
     }
 
     private bool isOnGround() {
@@ -78,9 +88,12 @@ public class PlayerController : MonoBehaviour {
     
     public void onMove(InputAction.CallbackContext context) {
         moveInput = context.ReadValue<Vector2>();
-        IsMoving = moveInput != Vector2.zero;
-
-        SetFacingDirection(moveInput);
+        if (IsAlive) {
+            IsMoving = moveInput != Vector2.zero;
+            SetFacingDirection(moveInput);
+        } else {
+            IsMoving = false;
+        }
     }
 
     private void SetFacingDirection(Vector2 moveInput) {
@@ -101,5 +114,9 @@ public class PlayerController : MonoBehaviour {
         if (context.started) {
             animator.SetTrigger("attack");
         }
+    }
+
+    public void onHit(int damage, Vector2 knockback) {
+        rigidbody2D.velocity = new Vector2(knockback.x, rigidbody2D.velocity.y + knockback.y);
     }
 }
